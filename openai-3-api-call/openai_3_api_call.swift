@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct openai_3_api_callApp: App {
+struct openai_3_api_call: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

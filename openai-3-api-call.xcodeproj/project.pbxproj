@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08E93F7329E3AFA900F3D2FE /* openai_3_api_callApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E93F7229E3AFA900F3D2FE /* openai_3_api_callApp.swift */; };
+		08E93F7329E3AFA900F3D2FE /* openai_3_api_call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E93F7229E3AFA900F3D2FE /* openai_3_api_call.swift */; };
 		08E93F7529E3AFA900F3D2FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E93F7429E3AFA900F3D2FE /* ContentView.swift */; };
 		08E93F7729E3AFAC00F3D2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E93F7629E3AFAC00F3D2FE /* Assets.xcassets */; };
 		08E93F7A29E3AFAC00F3D2FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E93F7929E3AFAC00F3D2FE /* Preview Assets.xcassets */; };
+		08E93F8329E3B02A00F3D2FE /* SentimentAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E93F8229E3B02A00F3D2FE /* SentimentAnalysis.swift */; };
+		08E93F8529E3B04000F3D2FE /* DallESearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E93F8429E3B04000F3D2FE /* DallESearch.swift */; };
+		08E93F8729E3B04D00F3D2FE /* CompleteSentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E93F8629E3B04D00F3D2FE /* CompleteSentence.swift */; };
+		08E93F8A29E3B08000F3D2FE /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 08E93F8929E3B08000F3D2FE /* OpenAIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08E93F6F29E3AFA900F3D2FE /* openai-3-api-call.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "openai-3-api-call.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		08E93F7229E3AFA900F3D2FE /* openai_3_api_callApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openai_3_api_callApp.swift; sourceTree = "<group>"; };
+		08E93F7229E3AFA900F3D2FE /* openai_3_api_call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openai_3_api_call.swift; sourceTree = "<group>"; };
 		08E93F7429E3AFA900F3D2FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		08E93F7629E3AFAC00F3D2FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08E93F7929E3AFAC00F3D2FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08E93F8229E3B02A00F3D2FE /* SentimentAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalysis.swift; sourceTree = "<group>"; };
+		08E93F8429E3B04000F3D2FE /* DallESearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DallESearch.swift; sourceTree = "<group>"; };
+		08E93F8629E3B04D00F3D2FE /* CompleteSentence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSentence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E93F8A29E3B08000F3D2FE /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +59,11 @@
 		08E93F7129E3AFA900F3D2FE /* openai-3-api-call */ = {
 			isa = PBXGroup;
 			children = (
-				08E93F7229E3AFA900F3D2FE /* openai_3_api_callApp.swift */,
+				08E93F7229E3AFA900F3D2FE /* openai_3_api_call.swift */,
 				08E93F7429E3AFA900F3D2FE /* ContentView.swift */,
+				08E93F8229E3B02A00F3D2FE /* SentimentAnalysis.swift */,
+				08E93F8429E3B04000F3D2FE /* DallESearch.swift */,
+				08E93F8629E3B04D00F3D2FE /* CompleteSentence.swift */,
 				08E93F7629E3AFAC00F3D2FE /* Assets.xcassets */,
 				08E93F7829E3AFAC00F3D2FE /* Preview Content */,
 			);
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = "openai-3-api-call";
+			packageProductDependencies = (
+				08E93F8929E3B08000F3D2FE /* OpenAIKit */,
+			);
 			productName = "openai-3-api-call";
 			productReference = 08E93F6F29E3AFA900F3D2FE /* openai-3-api-call.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 08E93F6629E3AFA900F3D2FE;
+			packageReferences = (
+				08E93F8829E3B08000F3D2FE /* XCRemoteSwiftPackageReference "OpenAIKit" */,
+			);
 			productRefGroup = 08E93F7029E3AFA900F3D2FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E93F8529E3B04000F3D2FE /* DallESearch.swift in Sources */,
 				08E93F7529E3AFA900F3D2FE /* ContentView.swift in Sources */,
-				08E93F7329E3AFA900F3D2FE /* openai_3_api_callApp.swift in Sources */,
+				08E93F7329E3AFA900F3D2FE /* openai_3_api_call.swift in Sources */,
+				08E93F8329E3B02A00F3D2FE /* SentimentAnalysis.swift in Sources */,
+				08E93F8729E3B04D00F3D2FE /* CompleteSentence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08E93F8829E3B08000F3D2FE /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MarcoDotIO/OpenAIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08E93F8929E3B08000F3D2FE /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E93F8829E3B08000F3D2FE /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 08E93F6729E3AFA900F3D2FE /* Project object */;
 }
