@@ -6,7 +6,6 @@
 //
 
 
-import OpenAIKit
 import SwiftUI
 
 struct ContentView: View {

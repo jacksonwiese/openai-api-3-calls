@@ -16,7 +16,7 @@ import OpenAIKit
 final class CompleteSent: ObservableObject {
     private var openai: OpenAI?
     func setup() {
-        openai = OpenAI(Configuration(organizationId: "YOUR_ORG_ID_HERE", apiKey: "YOUR_API_KEY_HERE"))
+        openai = OpenAI(Configuration(organizationId: "org-WmlbvfDdUkg0Q9jW0GAmWvwH", apiKey: "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"))
     }
     
     func completeSentence (prompt: String) async -> String? {
