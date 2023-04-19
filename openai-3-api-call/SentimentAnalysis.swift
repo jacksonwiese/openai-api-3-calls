@@ -11,7 +11,8 @@ import OpenAIKit
 final class SentAnalysis: ObservableObject {
     private var openai: OpenAI?
     func setup() {
-        openai = OpenAI(Configuration(organizationId: "org-WmlbvfDdUkg0Q9jW0GAmWvwH", apiKey: "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"))
+        //Add ORG ID and API key here
+        openai = OpenAI(Configuration(organizationId: "ORG_ID", apiKey: "API_KEY"))
     }
     
     func sentAnalysis (prompt: String) async -> String? {
