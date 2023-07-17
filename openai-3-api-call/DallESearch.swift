@@ -11,7 +11,7 @@ import SwiftUI
 final class ViewModel: ObservableObject {
     private var openai: OpenAI?
     func setup() {
-        openai = OpenAI(Configuration(organizationId: "org-WmlbvfDdUkg0Q9jW0GAmWvwH", apiKey: "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"))
+        openai = OpenAI(Configuration(organizationId: "org-WmlbvfDdUkg0Q9jW0GAmWvwH", apiKey: "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"))
     }
     
     func generateImage(prompt: String) async -> UIImage? {

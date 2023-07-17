@@ -12,7 +12,7 @@ final class SentAnalysis: ObservableObject {
     private var openai: OpenAI?
     func setup() {
         //Add ORG ID and API key here
-        openai = OpenAI(Configuration(organizationId: "ORG_ID", apiKey: "API_KEY"))
+        openai = OpenAI(Configuration(organizationId: "org-WmlbvfDdUkg0Q9jW0GAmWvwH", apiKey: "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"))
     }
     
     func sentAnalysis (prompt: String) async -> String? {
